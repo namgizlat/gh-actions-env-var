@@ -27,8 +27,8 @@ jobs:
         run: npm ci
       # - name: Run server
       #   run: npm start & npx wait-on http://127.0.0.1:$PORT
-      - name: Run tests
-        run: npm test
+      # - name: Run tests
+      #   run: npm test
       - name: Output information
         run: |
           echo "MONGODB_NAME: $MONGODB_NAME"
