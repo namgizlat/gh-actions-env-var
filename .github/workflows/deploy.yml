@@ -31,7 +31,7 @@ jobs:
       #   run: npm test
       - name: Output information
         run: |
-          echo "MONGODB_NAME: $MONGODB_NAME"
+          echo "MONGO_DB_NAME: $MONGO_DB_NAME"
   deploy:
     needs: test
     runs-on: ubuntu-latest
