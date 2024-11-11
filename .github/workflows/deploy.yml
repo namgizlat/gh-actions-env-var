@@ -40,7 +40,7 @@ jobs:
         run: |        
           echo "..."
   report:
-    if: !success()
+    if: ${{ ! success() }}
     needs: [test,deploy]
     runs-on: ubuntu-latest
     steps:
