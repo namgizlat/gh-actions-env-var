@@ -11,6 +11,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Load & Cache deps
         uses: ./.github/actions/cached-deps
+        with:
+          someinput: 'hello input'
       - name: Lint code
         run: npm run lint
   test:
