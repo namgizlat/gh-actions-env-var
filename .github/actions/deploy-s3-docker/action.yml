@@ -1,0 +1,21 @@
+name: Docker deply
+inputs:
+  buckets: 
+    description: 'the a3 bucket name'
+    required: true
+  buckets-region: 
+    description: 'the region of a3 bucket name'
+    required: false
+    default: 'us-east-1'
+  dist-folder: 
+    description: 'folder name'
+    required: true
+  outputs:
+    website-url:
+      description: 'the URL'
+  
+    
+description: 'action using docker'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
