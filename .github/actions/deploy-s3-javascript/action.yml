@@ -1,0 +1,5 @@
+name: deploy java script
+description: 'deploy js to aws s3'
+runs:
+  using: 'node16'
+  main: 'main.js'
